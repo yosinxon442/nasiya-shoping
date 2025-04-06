@@ -1,0 +1,139 @@
+.login-form {
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .auth-logo {
+    height: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .login-form p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #444;
+  }
+  
+  .input-wrapper,
+  .password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+    padding: 10px 12px;
+  }
+  
+  .input-wrapper input,
+  .password-wrapper input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 8px;
+    font-size: 14px;
+  }
+  
+  .input-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .toggle-password {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 10px;
+    color: #666;
+  }
+  
+  .input-error {
+    border: 1px solid #e74c3c !important;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .login-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .forgot-password {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 0;
+  }
+  
+  .login-button {
+    width: 100%;
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #0b5ed7;
+  }
+  
+  .login-button.disabled {
+    background-color: #a0c8ff;
+    cursor: not-allowed;
+  }
+  
+  .auth-switch {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .admin-link {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    margin-left: 4px;
+    font-weight: 600;
+  }
+  

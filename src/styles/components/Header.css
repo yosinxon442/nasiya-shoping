@@ -1,0 +1,68 @@
+.Header {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    z-index: 10;
+  }
+  
+  .Header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .Header__logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .Header__links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .Header__link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .Header__link:hover {
+    color: #1890ff;
+  }
+  
+  .Header__icon {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+  
+  .Header__content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Header__content .ant-select {
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .Header__content .ant-select-selector {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+  }
+  
+  .Header__content .ant-select-selection-item {
+    color: #333;
+  }
+  
+  .Header__content .ant-select-arrow {
+    color: #333;
+  }
+  

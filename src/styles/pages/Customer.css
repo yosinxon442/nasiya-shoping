@@ -1,0 +1,157 @@
+.customers {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.customers .container {
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.customers__search {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.customers__search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.customers__search-form input {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.customers__search-icon {
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  font-size: 18px;
+  color: #888;
+}
+
+.customers__search-btn {
+  border: none;
+  background: #fff;
+  padding: 10px 14px;
+  margin-left: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.customers__search-btn__icon {
+  font-size: 18px;
+}
+
+.customers__list {
+  display: flex;
+  width: 1000px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.customers__item {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+  border: 1px solid #eee;
+}
+
+.customers__item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.customers__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.customers__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.customers__phone {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.customers__debt-label {
+  font-size: 14px;
+  color: #888;
+}
+
+.customers__debt {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customers__debt.positive {
+  color: #52c41a;
+}
+
+.customers__debt.negative {
+  color: #f5222d;
+}
+
+.customers__favorite {
+  margin-left: 10px;
+}
+
+.star-icon {
+  font-size: 20px;
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.star-icon.active {
+  color: #fadb14;
+}
+
+.customers__add {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.customers__add:hover {
+  background-color: #40a9ff;
+}
+
+.customers__loading {
+  text-align: center;
+  margin-top: 40px;
+}

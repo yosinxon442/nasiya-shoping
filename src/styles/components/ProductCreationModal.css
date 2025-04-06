@@ -1,0 +1,136 @@
+.product-creation-modal {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .back-button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #1890ff;
+    cursor: pointer;
+  }
+  
+  .date-picker-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-picker {
+    width: 100%;
+    margin-right: 10px;
+  }
+  
+  .calendar-icon {
+    font-size: 16px;
+    color: #1890ff;
+  }
+  
+  .ant-checkbox-wrapper {
+    margin-left: 10px;
+  }
+  
+  .upload-placeholder {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 1px dashed #d9d9d9;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+  }
+  
+  .upload-icon {
+    font-size: 22px;
+    color: #1890ff;
+  }
+  
+  .upload-text {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #1890ff;
+  }
+  
+  .ant-upload-list-item {
+    margin: 5px 0;
+  }
+  
+  .ant-upload-list-item-name {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .ant-upload-list-item-thumbnail img {
+    border-radius: 8px;
+  }
+  
+  .ant-btn-dashed {
+    background-color: #f5f5f5;
+    color: #1890ff;
+    border: 1px dashed #1890ff;
+    font-weight: 600;
+    border-radius: 8px;
+  }
+  
+  .ant-btn-dashed:hover {
+    background-color: #1890ff;
+    color: #fff;
+  }
+  
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .ant-input {
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .ant-select-selector {
+    border-radius: 8px !important;
+  }
+  
+  .ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+  }
+  
+  .ant-form-item-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .ant-input-disabled {
+    background-color: #f5f5f5;
+    color: #aaa;
+  }
+  
+  .mb-2 {
+    margin-bottom: 12px;
+  }
+  

@@ -1,0 +1,273 @@
+/* Home.css */
+.Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background: #f7f9fc;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  /* === USER INFO === */
+  .Home__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .Home__user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .Home__user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #735CD8;
+    object-fit: cover;
+  }
+  
+  .Home__user-info p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* === CALENDAR BUTTON === */
+  .calendar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .calendar:hover {
+    transform: scale(1.1);
+  }
+  
+  /* === PRICES SECTION === */
+  .prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #735CD8, #9D7FEA);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .prices-item h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .prices-item p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .toggle-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .toggle-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* === STATS CARDS === */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .cards-item {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .cards-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .cards-item h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .cards-item__amount,
+  .cards-item__amount2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #735CD8;
+  }
+  
+  /* === WALLET SECTION === */
+  .Home__wallet {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .Home__wallet h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .Home__wallet-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4CAF50, #81C784);
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  
+  .wallet {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .wallet-icon2 {
+    font-size: 24px;
+  }
+  
+  .wallet-amount p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .wallet-amount h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .wallet-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  .wallet-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* === WALLET HISTORY === */
+  .Home__wallet-history {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .Home__wallet-history p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .Home__wallet-history h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+  }
+  
+  /* === DRAWER STYLE === */
+  .drawer .drawer-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .drawer .drawer-content {
+    margin-top: 15px;
+  }
+  
+  .drawer-content h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .drawer-content__cards {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .drawer-content__cards-item {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .drawer-content__cards-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .drawer-content__cards-item p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #735CD8;
+  }
+
+  .Home__user-image{
+    width: 65px;
+    height: 65px;
+    border-radius: 70px;
+    border: 1px solid blueviolet;
+  }
+  
+  .rayzinkont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }

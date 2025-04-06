@@ -1,0 +1,149 @@
+.CustomerDetail {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.customer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.customer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.customer__header h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.customer__header .back {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.customer__header .dropdown .ant-btn {
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+.customer__content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.debt-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.debt-item {
+  padding: 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.debt-item:hover {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+}
+
+.debt-item__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.debt-item__header h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1890ff;
+}
+
+.debt-item__header p {
+  font-size: 14px;
+  color: #888;
+}
+
+.debt-item__content h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.debt-item__content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.debt-item__content .progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.debt-item__content .progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 4px;
+}
+
+.no-debt {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.no-debt h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.no-debt p {
+  font-size: 14px;
+  color: #888;
+}
+
+.add-debt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1890ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-debt:hover {
+  background-color: #40a9ff;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
