@@ -8,6 +8,10 @@ import Home from "../pages/Home";
 import Customers from "../pages/Customers";
 import Reports from "../pages/Reports";
 import Settings from "../pages/Settings";
+import PersonalInfo from "../pages/settings/PersonalInfo";
+import Help from "../pages/settings/Help";
+import Feedback from "../pages/settings/Feedback";
+import About from "../pages/settings/About";
 import DebtDetail from "../components/DebtsDetail/DebtDetail";
 
 
@@ -23,6 +27,10 @@ function AppRoutes() {
           <Route path="/debt/:debtId" element={<DebtDetail />} />
           <Route path="/reports" element={<Reports/>} />
           <Route path="/settings" element={<Settings/>} />
+          <Route path="/settings/personal-info" element={<PersonalInfo />} />
+          <Route path="/settings/help" element={<Help />} />
+          <Route path="/settings/feedback" element={<Feedback />} />
+          <Route path="/settings/about" element={<About />} />
         </Route>
         <Route path="*" element={<NotFound/>}/>
       </Route>

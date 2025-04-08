@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import { Eye, EyeOff } from "lucide-react";
 import { Modal, Button, message } from "antd";
@@ -18,55 +18,17 @@ const LoginForm = () => {
   } = useForm<LoginFormData>();
   const { loginMutation } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
-  const [isForgotPasswordModalOpen, setForgotPasswordModalOpen] =
-    useState(false);
+  const [isForgotPasswordModalOpen, setForgotPasswordModalOpen] = useState(false);
   const [isAdminInfoModalOpen, setAdminInfoModalOpen] = useState(false);
-  const [isBlocked, setIsBlocked] = useState(false);
-  const [isBlockedModalOpen, setIsBlockedModalOpen] = useState(false);
-  const [attempts, setAttempts] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(30);
 
   const login = watch("login", "");
   const hashed_password = watch("hashed_password", "");
-  const isFormFilled = login.trim() !== "" || hashed_password.trim() !== "";
-
-  useEffect(() => {
-    let timer: NodeJS.Timeout;
-    if (isBlocked) {
-      setIsBlockedModalOpen(true);
-      timer = setInterval(() => {
-        setTimeLeft((prev) => {
-          if (prev === 1) {
-            clearInterval(timer);
-            setIsBlocked(false);
-            setAttempts(0);
-            setTimeLeft(30);
-            setIsBlockedModalOpen(false);
-          }
-          return prev - 1;
-        });
-      }, 1000);
-    }
-    return () => clearInterval(timer);
-  }, [isBlocked]);
+  const isFormFilled = login.trim() !== "" && hashed_password.trim() !== "";
 
   const onSubmit = (data: LoginFormData) => {
-    if (isBlocked) return;
-
     loginMutation.mutate(data, {
       onError: () => {
-        setAttempts((prev) => {
-          if (prev + 1 >= 3) {
-            setIsBlocked(true);
-            message.error("Ko'p urinishlar! 30 soniya kuting.");
-            return 3;
-          }
-          message.error("Login yoki parol noto'g'ri");
-          return prev + 1;
-        });
-      },
-      onSuccess: () => {
-        setAttempts(0);
+        message.error("Login yoki parol noto'g'ri");
       },
     });
   };
@@ -122,7 +84,6 @@ const LoginForm = () => {
         </div>
 
         <div className="login-info">
-          <p>Urinishlar soni: {attempts}/3</p>
           <button
             type="button"
             className="forgot-password"
@@ -134,16 +95,10 @@ const LoginForm = () => {
 
         <button
           type="submit"
-          className={`login-button ${
-            !isFormFilled || isBlocked ? "disabled" : ""
-          }`}
-          disabled={!isFormFilled || isBlocked || loginMutation.isPending}
+          className={`login-button ${!isFormFilled ? "disabled" : ""}`}
+          disabled={!isFormFilled || loginMutation.isLoading}
         >
-          {isBlocked
-            ? `Qayta urinish: ${timeLeft} s`
-            : loginMutation.isPending
-            ? "Yuklanmoqda..."
-            : "Kirish"}
+          {loginMutation.isLoading ? "Yuklanmoqda..." : "Kirish"}
         </button>
       </form>
 
@@ -193,15 +148,6 @@ const LoginForm = () => {
         ]}
       >
         <p>Hozircha do'kon administratori mavjud emas.</p>
-      </Modal>
-
-      <Modal
-        title="Juda ko'p noaniq urinish"
-        open={isBlockedModalOpen}
-        footer={null}
-        closable={false}
-      >
-        <p>Iltimos, {timeLeft} soniya kuting va qayta urinib ko'ring.</p>
       </Modal>
     </div>
   );

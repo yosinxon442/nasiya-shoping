@@ -1,0 +1,110 @@
+/* ReportsPage.css */
+
+.reports-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9fb;
+  }
+  
+  .reports-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .reports-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .report-tabs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e2e6ea;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .tab:hover {
+    background-color: #d1d6db;
+  }
+  
+  .tab.active {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .report-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .no-data {
+    text-align: center;
+    padding: 100px 0;
+    font-size: 18px;
+    color: #999;
+  }
+  
+  .report-group {
+    margin-bottom: 30px;
+  }
+  
+  .report-date {
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .report-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  .report-item:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .report-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .report-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+  }
+  
+  .report-phone {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  .report-amount {
+    font-size: 16px;
+    font-weight: 600;
+    color: #dc2626;
+  }
+  
