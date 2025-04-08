@@ -13,7 +13,7 @@ import Help from "../pages/settings/Help";
 import Feedback from "../pages/settings/Feedback";
 import About from "../pages/settings/About";
 import DebtDetail from "../components/DebtsDetail/DebtDetail";
-
+import Calendar from "../pages/Calendar";
 
 function AppRoutes() {
   return (
@@ -31,6 +31,7 @@ function AppRoutes() {
           <Route path="/settings/help" element={<Help />} />
           <Route path="/settings/feedback" element={<Feedback />} />
           <Route path="/settings/about" element={<About />} />
+          <Route path="/calendar" element={<Calendar />} />
         </Route>
         <Route path="*" element={<NotFound/>}/>
       </Route>

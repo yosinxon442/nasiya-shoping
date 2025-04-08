@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { EyeOutlined, EyeInvisibleOutlined, PlusOutlined } from "@ant-design/icons";
+import { EyeOutlined, EyeInvisibleOutlined, PlusOutlined, CalendarOutlined } from "@ant-design/icons";
 import { FaUserCircle, FaHome, FaUsers, FaChartBar, FaCog } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStore } from "../hooks/useStore";
 import "../styles/pages/Home.css";
 
 function Home() {
   const [isVisible, setIsVisible] = useState(true);
   const { user } = useStore();
+  const navigate = useNavigate();
 
   return (
     <div className="Home">
@@ -20,6 +21,12 @@ function Home() {
                 <FaUserCircle size={32} color="#666" />
               </div>
               <span className="user-name">{user?.data?.login || "Foydalanuvchi"}</span>
+              <button 
+                className="calendar-button"
+                onClick={() => navigate('/calendar')}
+              >
+                <CalendarOutlined style={{ fontSize: "24px", color: "#735CD8" }} />
+              </button>
             </div>
 
             {/* Total Amount */}
